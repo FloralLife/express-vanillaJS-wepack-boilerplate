@@ -1,4 +1,4 @@
-# express-vanillaJS-wepack-boilerplate
+# express-vanillaJS-webpack-boilerplate
 
 ### 설치 모듈
 - express
