@@ -3,11 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
-	entry: {
-		vendor: '@babel/polyfill',
-		index: './src/index.js',
-		search: './src/search.js'
-	},
+	entry: ['@babel/polyfill', './src/index.js'],
 	output: {
 		path: path.resolve(__dirname, 'public'),
 		filename: '[name]_bundle.js'
@@ -47,11 +43,6 @@ module.exports = {
 			template: './src/index.html',
 			filename: './index.html',
 			chunks: ['index']
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/search.html',
-			filename: './search.html',
-			chunks: ['search']
 		})
 	],
 	devtool: 'source-map'
