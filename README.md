@@ -6,4 +6,3 @@
 - webpack
 - sass, css, style loader
 - html-webpack-plugin
-- nodemon
